@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}
+body{
+    background-color: #0F937D;
+}
+div.dark{
+    background-color: #24292d;
+    color: #fff;
+}
+.main .darkM{
+    float: right;
+    background-color: #0f937d56;
+    margin: 10px;
+    margin-right: 15px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.darkM::before{
+    content: '\f186';
+    font-family: 'Font Awesome 5 Free';
+    color: #0c7564;
+}
+div.dark .darkM::before{
+    content: '\f185';
+    font-family: 'Font Awesome 5 Free';
+    color: #0febc6;
+}
+.main{
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background 0.5s;
+    /* padding: 20px; */
+}
+
+/* wrapper css */
+.main .wrapper{
+    /* border: 1px solid red; */
+    width: auto;
+    margin-left: 100px;
+    padding: 30px;
+}
+.main .wrapper h1{
+    color: #0F937D;
+    letter-spacing: 8px;
+    font-size: 50pt;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.137);
+    /* text-shadow: 5px 5px 8px grey; */
+}
+.main .wrapper li{
+    list-style-type: none;
+    font-size: 15pt;
+}
+.main .resume{
+    background-color: #0F937D;
+    width: fit-content;
+    padding: 10px 100px;
+    margin-top: 50px;
+    margin-left: 550px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+}
+.main .resume a{
+    text-decoration: none;
+    font-size: 20pt;
+    color: #fff;
+}
+
+/* my-work CSS */
+.main .my-work{
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 10px;
+}
+.main .my-work .my-work-title h1{
+    color: #0F937D;
+    font-size: 35pt;
+}
+.main .my-work .projects{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 80px;
+}
+.main .my-work hr{
+    border-top: 1px solid #0F937D;
+    width: 80%;
+}
+.main .my-work .projects .project-title{
+    border: none;
+    background-color: #0F937D;
+    color: #fff;
+    width: 600px;
+    height: 500px;
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 20px;
+    box-shadow: 15px 20px 10px rgba(0, 0, 0, 0.137);
+    
+}
+.main .my-work .projects .project-title h1{
+    font-size: 60pt;
+    text-align: center;
+    margin: 40px;
+    text-shadow: 15px 20px 10px rgba(0, 0, 0, 0.137);
+}
+
+/* FEELFREE CSS */
+.main .feelfree{
+    background-color: #0F937D;
+    overflow: hidden;
+    margin-top: 80px;
+}
+.main .feelfree .ff{
+    display: inline-block;
+    /* border: 1px solid; */
+    margin-top: 20px;
+    margin-bottom: 50px;
+    /* margin-left: 41%; */
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.main .feelfree .ff .ttl{
+    color: #fff;
+    font-size: 25pt;
+    letter-spacing: 5px;
+    padding: 10px;
+}
+.main .feelfree .ff .about-resume{
+    display: inline-block;
+    margin-top: 50px;
+    /* border: 1px solid; */
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+.main .feelfree .ff .about-resume a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 28pt;
+    color: #0F937D;
+    background-color: #fff;
+    border: none;
+    /* margin-top: 100px; */
+    padding: 20px;
+    min-width: 400px;
+    border-radius: 30px;
+    letter-spacing: 5px;
+    box-shadow: 15px 20px 10px rgba(0, 0, 0, 0.137);
+}
+.main .feelfree .ff .about-resume .am{
+    margin-right: 50px;
+}
+.main .feelfree .ff .about-resume .vr{
+    margin-left: 50px;
+}
+
+/* sub-footer css */
+.main .sub-footer{
+    padding: 10px;
+}
+.main .sub-footer .social-media{
+    /* border: 1px solid; */
+    text-align: center;
+}
+.main .sub-footer .social-media i{
+    /* border: 1px solid; */
+    text-align: center;
+    margin: 10px;
+    font-size: 24pt;
+    color: #0F937D;
+    text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.137);
+}
+.main .sub-footer hr{
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+}
+.main .sub-footer .disclaimer{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #0F937D;
+    letter-spacing: 5px;
+}
+
+/* MEDIA QUERy */
+
+@media only screen and (max-width: 1000px) {
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI';
+    }
+    .main{
+        background-color: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* overflow: hidden; */
+        padding: 5px;
+    }
+    
+    /* wrapper css */
+    .main .wrapper{
+        /* border: 1px solid red; */
+        width: auto;
+        margin-left: 0px;
+        padding: 5px;
+    }
+    .main .wrapper h1{
+        /* border: 1px solid; */
+        color: #0F937D;
+        letter-spacing: 2px;
+        font-size: 25pt;
+        text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.137);
+        padding: 5px;
+        width: fit-content;
+        /* text-shadow: 5px 5px 8px grey; */
+    }
+    .main .wrapper li{
+        list-style-type: none;
+        font-size: 12pt;
+        text-align: justify;
+    }
+    .main .resume{
+        background-color: #0F937D;
+        width: fit-content;
+        padding: 10px 25px;
+        margin-top: 50px;
+        margin-left: 25%;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px black;
+    }
+    .main .resume a{
+        text-decoration: none;
+        font-size: 12pt;
+        color: #fff;
+    }
+    
+    /* my-work CSS */
+    .main .my-work{
+        /* border: 1px solid; */
+        margin-top: 50px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .main .my-work .my-work-title h1{
+        color: #0F937D;
+        font-size: 25pt;
+    }
+    .main .my-work .projects{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .main .my-work hr{
+        border-top: 1px solid #0F937D;
+        width: 80%;
+    }
+    .main .my-work .projects .project-title{
+        border: none;
+        background-color: #0F937D;
+        color: #fff;
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+        margin: 10px 10px 10px 10px;
+        border-radius: 20px;
+        box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.137);
+        
+    }
+    .main .my-work .projects .project-title h1{
+        font-size: 20pt;
+        text-align: center;
+        margin: 40px;
+        text-shadow: 15px 20px 10px rgba(0, 0, 0, 0.137);
+    }
+    
+    /* FEELFREE CSS */
+    .main .feelfree{
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid red; */
+        background-color: #0F937D;
+        overflow: visible;
+        margin-top: 80px;
+        padding: 5px;
+    }
+    .main .feelfree .ff{
+        /* border: 1px solid yellow; */
+        display: inline-block;
+        /* border: 1px solid; */
+        margin-top: 20px;
+        margin-bottom: 50px;
+        /* margin-left: 41%; */
+        width: 400px;
+        text-align: center;
+        padding: 10px;
+    }
+    .main .feelfree .ff .ttl{
+        /* border: 1px solid; */
+        color: #fff;
+        font-size: 15pt;
+        letter-spacing: 5px;
+        padding: 10px;
+    }
+    .main .feelfree .ff .about-resume{
+        /* border: 1px solid; */
+        display: block;
+        margin-top: 50px;
+        /* border: 1px solid; */
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+    .main .feelfree .ff .about-resume a{
+        display: block;
+        text-decoration: none;
+        font-size: 12pt;
+        color: #0F937D;
+        background-color: #fff;
+        border: none;
+        /* margin-top: 100px; */
+        padding: 10px;
+        min-width: 200px;
+        border-radius: 30px;
+        letter-spacing: 2px;
+        box-shadow: 15px 20px 10px rgba(0, 0, 0, 0.137);
+    }
+    .main .feelfree .ff .about-resume .am{
+        margin-bottom: 10px;
+    }
+    .main .feelfree .ff .about-resume .vr{
+        margin-top: 10px;
+    }
+    
+    /* sub-footer css */
+    .main .sub-footer{
+        padding: 10px;
+    }
+    .main .sub-footer .social-media{
+        /* border: 1px solid; */
+        text-align: center;
+    }
+    .main .sub-footer .social-media i{
+        /* border: 1px solid; */
+        text-align: center;
+        margin: 10px;
+        font-size: 20pt;
+        color: #0F937D;
+        text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.137);
+    }
+    .main .sub-footer .social-media i:hover{
+        font-size: 24pt;
+    }
+    .main .sub-footer hr{
+        width: 300px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .main .sub-footer .disclaimer{
+        text-align: center;
+        margin-top: 30px;
+        font-weight: lighter;
+        color: #0F937D;
+        letter-spacing: 5px;
+    }
+  }

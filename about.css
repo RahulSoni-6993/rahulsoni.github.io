@@ -98,7 +98,29 @@ body{
     .main .about{
         width: 300px;
         font-size: 15pt;
+        height: 50px;
         border-radius: 25px;
+    }
+    .main .about .back a{
+        text-decoration: none;
+        color: #0F937D;
+        background-color: #f5faf970;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    .darkM::before{
+        content: '\f186';
+        font-family: 'Font Awesome 5 free';
+        color: #0F937D;
+        background-color: #f5faf970;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    .main .details p{
+        font-size: 12pt;
+    }
+    .main .details h2{
+        font-size: 15pt;
     }
 
     /* sub-footer css */

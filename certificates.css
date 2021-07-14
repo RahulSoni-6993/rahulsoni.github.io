@@ -50,7 +50,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin: 50px 10px 50px 10px;
 }
 .main .certi-blocks .certi1 img{
@@ -103,13 +103,13 @@ body{
         align-items: unset;
         /* flex-wrap: wrap; */
         padding: 0px;
-        margin: 5px 5px 5px 5px;
+        margin: 5px 5px 5px 10px;
     }
     .main .certi-blocks .certi1{
         position: relative;
         margin: 0px;
         width: 330px;
-        border: 1px solid;   
+        /* border: 1px solid;    */
         text-align: center;
         height: 320px;
         padding: 5px;

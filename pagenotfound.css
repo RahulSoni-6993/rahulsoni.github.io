@@ -138,6 +138,7 @@ body{
         letter-spacing: 2px;
     }
     .main .darkM{
+        display: block;
         position: absolute;
         right: 0;
         background-color: #0f937d56;

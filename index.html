@@ -14,10 +14,11 @@
 </head>
 <body>
     <div class="main">
-        <div class="darkM"></div>
+        <div class="bcolor"><div class="bred" onclick="doBlue()"></div><div class="bblue" onclick="doPink()"></div><div class="bmarigold" onclick="doMaroon()"></div></div>
+        <div class="darkM" id="darkmode"></div>
         <div class="wrapper">
             <div class="intro">
-                <h1>Hi, I'm Rahul Soni.</h1>
+                <h1 id="rs">Hi, I'm Rahul Soni.</h1>
             </div>
             <div class="intro_about">
                 <br>
@@ -30,12 +31,12 @@
                 </ul>
             </div>
         </div>
-        <div class="resume">
+        <div class="resume" id="dr">
             <a href="pagenotfound.html">Download Resume</a>
         </div>
         <div class="my-work">
             <div class="my-work-title">
-                <h1>My Work</h1>
+                <h1 id="mw">My Work</h1>
             </div>
             <hr>
             <div class="projects">
@@ -53,14 +54,14 @@
                 </div>
             </div>
         </div>
-        <div class="feelfree">
+        <div class="feelfree" id="ffree">
             <div class="ff">
                 <div class="ttl">
                     <h1>Feel free to say Hi</h1>
                 </div>
                 <div class="about-resume">
-                    <a href="about.html" class="am">About Me</a>
-                    <a href="certificates.html" class="vr">My Certificates</a>
+                    <a href="about.html" class="am" id="ame">About Me</a>
+                    <a href="certificates.html" class="vr" id="mc">My Certificates</a>
                 </div>
             </div>
         </div>
@@ -73,7 +74,7 @@
             </div>
             <hr>
             <div class="disclaimer">
-                <p>All information are my own and only reflects my point of view. All projects are completed and designed by me.</p>
+                <p id="dc">All information are my own and only reflects my point of view. All projects are completed and designed by me.</p>
             </div>
         </div>
     </div>
@@ -83,6 +84,100 @@
         const darkM = document.querySelector(".darkM");
         darkM.onclick = function(){
             main.classList.toggle("dark")
+        }
+        function doBlue(){
+            document.body.style.backgroundColor = "#8000FF";
+            var dm = document.getElementById("darkmode");
+            var rs = document.getElementById("rs");
+            var dr = document.getElementById("dr");
+            var pttl = document.querySelectorAll(".project-title");
+            var mw = document.getElementById("mw");
+            var ffree = document.getElementById("ffree");
+            var ame = document.getElementById("ame");
+            var mc = document.getElementById("mc");
+            var i = document.getElementsByTagName("i");
+            var dc = document.getElementById("dc");
+
+            dm.style.color = "#8000FF";
+            dm.style.backgroundColor = "#8000ff67"; 
+            rs.style.color = "#8000FF";
+            dr.style.backgroundColor = "#8000FF";
+            pttl[0].style.backgroundColor = "#8000FF";
+            pttl[1].style.backgroundColor = "#8000FF";
+            pttl[2].style.backgroundColor = "#8000FF";
+            pttl[3].style.backgroundColor = "#8000FF";
+            mw.style.color = "#8000FF";
+            ffree.style.backgroundColor = "#8000FF";
+            ame.style.color = "#8000FF";
+            mc.style.color = "#8000FF";
+            i[0].style.color = "#8000FF";
+            i[1].style.color = "#8000FF";
+            i[2].style.color = "#8000FF";
+            i[3].style.color = "#8000FF";
+            dc.style.color = "#8000FF";
+        }
+        function doPink(){
+            document.body.style.backgroundColor = "#FF0080";
+            var dm = document.getElementById("darkmode");
+            var rs = document.getElementById("rs");
+            var dr = document.getElementById("dr");
+            var pttl = document.querySelectorAll(".project-title");
+            var mw = document.getElementById("mw");
+            var ffree = document.getElementById("ffree");
+            var ame = document.getElementById("ame");
+            var mc = document.getElementById("mc");
+            var i = document.getElementsByTagName("i");
+            var dc = document.getElementById("dc");
+
+
+            dm.style.color = "#FF0080";
+            dm.style.backgroundColor = "#ff008062" 
+            rs.style.color = "#FF0080";
+            dr.style.backgroundColor = "#FF0080";
+            pttl[0].style.backgroundColor = "#FF0080";
+            pttl[1].style.backgroundColor = "#FF0080";
+            pttl[2].style.backgroundColor = "#FF0080";
+            pttl[3].style.backgroundColor = "#FF0080";
+            mw.style.color = "#FF0080";
+            ffree.style.backgroundColor = "#FF0080";
+            ame.style.color = "#FF0080";
+            mc.style.color = "#FF0080";
+            i[0].style.color = "#FF0080";
+            i[1].style.color = "#FF0080";
+            i[2].style.color = "#FF0080";
+            i[3].style.color = "#FF0080";
+            dc.style.color = "#FF0080";
+        }
+        function doMaroon(){
+            document.body.style.backgroundColor = "#C21460";
+            var dm = document.getElementById("darkmode");
+            var rs = document.getElementById("rs");
+            var dr = document.getElementById("dr");
+            var pttl = document.querySelectorAll(".project-title");
+            var mw = document.getElementById("mw");
+            var ffree = document.getElementById("ffree");
+            var ame = document.getElementById("ame");
+            var mc = document.getElementById("mc");
+            var i = document.getElementsByTagName("i");
+            var dc = document.getElementById("dc");
+
+            dm.style.color = "#C21460";
+            dm.style.backgroundColor = "#c2145f70" 
+            rs.style.color = "#C21460";
+            dr.style.backgroundColor = "#C21460";
+            pttl[0].style.backgroundColor = "#C21460";
+            pttl[1].style.backgroundColor = "#C21460";
+            pttl[2].style.backgroundColor = "#C21460";
+            pttl[3].style.backgroundColor = "#C21460";
+            mw.style.color = "#C21460";
+            ffree.style.backgroundColor = "#C21460";
+            ame.style.color = "#C21460";
+            mc.style.color = "#C21460";
+            i[0].style.color = "#C21460";
+            i[1].style.color = "#C21460";
+            i[2].style.color = "#C21460";
+            i[3].style.color = "#C21460";
+            dc.style.color = "#C21460";
         }
     </script>
 </body>
